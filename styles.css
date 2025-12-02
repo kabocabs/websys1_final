@@ -1,0 +1,149 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background Gradient */
+body {
+    background: linear-gradient(135deg, #6c63ff, #5ac8fa);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+/* Main Card Container */
+.container {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffffee;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Headers */
+h2, h3 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Form Rows */
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px rgba(108,99,255,0.2);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #584df2;
+}
+
+/* Small text */
+.small {
+    font-size: 13px;
+    color: #555;
+}
+
+/* Links */
+a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* NAVBAR */
+.nav {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Profile Avatar */
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6c63ff;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+table thead {
+    background: #6c63ff;
+    color: white;
+}
+
+table th, table td {
+    padding: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:hover {
+    background: #f0f0ff;
+}
+
+/* Admin Page wider container */
+.admin-container {
+    max-width: 900px !important;
+}
