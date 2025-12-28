@@ -1,11 +1,10 @@
 <?php
 session_start();
 
-// DATABASE SETTINGS (XAMPP)
-$DB_HOST = 'localhost';        // or '127.0.0.1'
-$DB_NAME = 'database_final';   // your actual database name
-$DB_USER = 'root';             // default XAMPP username
-$DB_PASS = '';                 // default XAMPP password is empty
+$DB_HOST = 'localhost';       
+$DB_NAME = 'database_final';   
+$DB_USER = 'root';             
+$DB_PASS = '';                 
 
 try {
     $pdo = new PDO(
